@@ -1,0 +1,251 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_clean"
+    android:orientation="horizontal"
+    tools:context=".CustomerRegistrationActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/navtop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_navtop"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/customerRegistrationPrevButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_view_previous_desc"
+                android:src="@drawable/selector_back_full" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/registrationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/navtop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_header"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_customers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="REGISTRATION"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/registrationForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registrationLayout"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/customerMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/customerMobileNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09234765267"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customerFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerMobileNumber"
+                android:layout_marginTop="10dp"
+                android:text="First Name"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/customerFirstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/customerMiddleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Middle Name"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/customerMiddleNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:hint="Middle Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/customerLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerMiddleName"
+                android:layout_marginTop="10dp"
+                android:text="Last Name"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/customerLastNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/customerBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/customerBirthDateButton"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@id/customerMobileNumberText"
+                    android:layout_below="@id/customerLastName"
+                    android:background="@drawable/selector_button_orange"
+                    android:text="Set" />
+
+                <TextView
+                    android:id="@+id/customerBirthdayResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="YYYY-MM-DD"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/customerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/customerAddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:hint="Address"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerBirthDate"
+                android:layout_marginTop="10dp"
+                android:text="Region"
+                android:textColor="@color/text" />
+
+            <Spinner
+                android:id="@+id/regionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:padding="10dp"
+                android:prompt="@string/region_prompt" />
+
+            <TextView
+                android:id="@+id/customerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerBirthDate"
+                android:layout_marginTop="10dp"
+                android:text="City"
+                android:textColor="@color/text" />
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white"
+                android:padding="10dp"
+                android:prompt="@string/city_prompt" />
+
+            <Button
+                android:id="@+id/takePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerAddress"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_button_orange"
+                android:text="Take a photo"
+                android:textColor="@color/text" />
+
+            <ImageView
+                android:id="@+id/customerPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/takePhoto"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerPhoto"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_button_orange"
+                android:padding="1dp"
+                android:text="SAVE"
+                android:textColor="@color/text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

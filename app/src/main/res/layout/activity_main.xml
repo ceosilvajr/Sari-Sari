@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutMenuBottom"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/transactButton"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="71dp"
+                android:layout_height="62dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_transaction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/transact"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_redeem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/redeem"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenuBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_customers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/customers"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/title_activity_admin"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

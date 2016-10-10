@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="edit_text_hint">#d1d1d1</color>
+    <color name="edit_text_color_link">#fff</color>
+    <color name="text">#fff</color>
+    
+</resources>

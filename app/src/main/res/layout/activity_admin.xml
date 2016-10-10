@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".AdminActivity" >
+
+    <LinearLayout
+        android:id="@+id/navtop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_navtop"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_view_previous_desc"
+            android:src="@drawable/selector_back_full" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/navtop"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_header"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_view_admin_desc"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_admin"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenuBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="19dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/viewBasketsButton"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_view_basket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/title_activity_view_baskets"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewRedemptionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="71dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_view_redemptions" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/title_activity_view_redemptions"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenuBottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutMenuBottom"
+        android:layout_marginTop="14dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/change_password1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:src="@drawable/ic_password1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/change_password1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_admin_password"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/image_view_transaction_desc"
+                android:src="@drawable/ic_password2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/change_admin_password"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

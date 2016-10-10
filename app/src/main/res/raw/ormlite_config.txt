@@ -1,0 +1,248 @@
+#
+# generated on 2013/04/17 04:54:26
+#
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Basket
+tableName=basket
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=conversionAmount
+# --field-end--
+# --field-start--
+fieldName=active
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Customer
+tableName=customer
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=mobileNumber
+indexName=customer_mobileNumber_idx
+# --field-end--
+# --field-start--
+fieldName=customerFirstName
+# --field-end--
+# --field-start--
+fieldName=customerLastName
+# --field-end--
+# --field-start--
+fieldName=customerMiddleName
+# --field-end--
+# --field-start--
+fieldName=customerAddress
+# --field-end--
+# --field-start--
+fieldName=customerRegion
+# --field-end--
+# --field-start--
+fieldName=customerCity
+# --field-end--
+# --field-start--
+fieldName=customerPicture
+# --field-end--
+# --field-start--
+fieldName=customerBirthDate
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --field-start--
+fieldName=totalSukiPoints
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.DeviceKey
+tableName=devicekey
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=key
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Item
+tableName=item
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=basket
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=srp
+# --field-end--
+# --field-start--
+fieldName=active
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Password
+tableName=password
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Purchase
+tableName=purchase
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=customer
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=totalPoints
+# --field-end--
+# --field-start--
+fieldName=receiptAmount
+# --field-end--
+# --field-start--
+fieldName=datePurchased
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.PurchasedItem
+tableName=purchaseditem
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=purchase
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=item
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+maxForeignAutoRefreshLevel=3
+# --field-end--
+# --field-start--
+fieldName=totalSrp
+# --field-end--
+# --field-start--
+fieldName=totalPoints
+# --field-end--
+# --field-start--
+fieldName=quantity
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.Redemption
+tableName=redemption
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=points
+# --field-end--
+# --field-start--
+fieldName=active
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hatchpointsolutions.sssrewards.app.objects.RedemptionTransaction
+tableName=redemptiontransaction
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=redemption
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=customer
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+maxForeignAutoRefreshLevel=3
+# --field-end--
+# --field-start--
+fieldName=totalPoints
+# --field-end--
+# --field-start--
+fieldName=quantity
+# --field-end--
+# --field-start--
+fieldName=dateCreated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

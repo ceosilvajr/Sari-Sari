@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/delete_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:text="Do you really want to save this Data?"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/edit_text_hint"
+        android:textColorLink="@color/edit_text_color_link"
+        android:textStyle="normal" >
+
+        <requestFocus />
+    </TextView>
+
+</LinearLayout>

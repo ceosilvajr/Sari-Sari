@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Suki</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="image_view_transaction_desc">Transaction Icon</string>
+    <string name="image_view_add_basket_desc">Add Promo Icon</string>
+    <string name="transact">TRANSACT</string>
+    <string name="redeem">REDEEM</string>
+    <string name="customers">CUSTOMERS</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="add_basket">ADD PROMO</string>
+    <string name="title_activity_admin">ADMIN</string>
+    <string name="title_activity_view_baskets">VIEW PROMOS</string>
+    <string name="title_activity_add_basket">ADD A PROMO</string>
+    <string name="basket_name">Promo Name</string>
+    <string name="conversion_amount">Peso Amount</string>
+    <string name="save_basket">Save Basket</string>
+    <string name="image_view_previous_desc">Previous</string>
+    <string name="title_activity_view_items">ViewItemsActivity</string>
+    <string name="add_item">ADD AN ITEM</string>
+    <string name="add_redemption">ADD PRIZE</string>
+    <string name="no_results">No Results Found</string>
+    <string name="srp">SRP</string>
+    <string name="item_name">Item Name</string>
+    <string name="save_item">Save Item</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_view_redemptions">VIEW PRIZES</string>
+    <string name="one_suki_point">1 Suki Point</string>
+    <string name="equal_sign">= P</string>
+    <string name="title_activity_add_redemption">Add Prize</string>
+    <string name="points">Suki Points</string>
+    <string name="save_redemption">Save PRIZE</string>
+    <string name="title_activity_transact">Transact</string>
+    <string name="input_mobile_number">Enter mobile number here.</string>
+    <string name="next">NEXT</string>
+    <string name="error_mobile_number_invalid">This is not a valid mobile number.</string>
+    <string name="back">BACK</string>
+    <string name="image_view_admin_desc">Admin</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="title_activity_transact2">Transact2Activity</string>
+    <string name="enter_password_1">Enter password1 here.</string>
+    <string name="login">Log in</string>
+    <string name="enter_admin_password">Enter password2 here.</string>
+    <string name="change_password1">CHANGE PASSWORD</string>
+    <string name="change_admin_password">CHANGE PASSWORD</string>
+    <string name="title_activity_change_password1">ChangePassword1Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="input_current_password1">Enter current password1</string>
+    <string name="input_new_password1">Enter new password1</string>
+    <string name="reinput_new_password1">Re-Enter new password1</string>
+    <string name="input_current_admin_password">Enter current password2</string>
+    <string name="input_new_admin_password">Enter new password2</string>
+    <string name="reinput_new_admin_password">Re-Enter new password2</string>
+    <string name="title_activity_customer">CUSTOMERS</string>
+    <string name="title_activity_customer2">Customer2Activity</string>
+    <string name="title_activity_prizes">PrizesActivity</string>
+    <string name="title_activity_prize">PrizeActivity</string>
+    <string name="prize_txtview">REDEMPTION</string>
+    <string name="title_activity_sync">SyncActivity</string>
+    <string name="title_activity_customer_registration">CustomerRegistrationActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="conversion_text">1 Suki Point = </string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="done">DONE</string>
+    <string name="edit_text_hint_receipt_amount">Receipt amount (required)</string>
+    <string name="region_prompt">Pick A Region</string>
+    <string name="city_prompt">Pick A City</string>
+
+</resources>

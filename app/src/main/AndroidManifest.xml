@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hatchpointsolutions.sssrewards.app"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_mysuki"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="sssrewards.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name=".LogInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ViewBasketsActivity"
+            android:label="@string/title_activity_view_baskets"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AddBasketActivity"
+            android:label="@string/title_activity_add_basket"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ViewItemsActivity"
+            android:label="@string/title_activity_view_items"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ViewRedemptionsActivity"
+            android:label="@string/title_activity_view_redemptions"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AddRedemptionActivity"
+            android:label="@string/title_activity_add_redemption"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TransactActivity"
+            android:label="@string/title_activity_transact"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AddItemActivity"
+            android:label="@string/title_activity_add_item"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Transact2Activity"
+            android:label="@string/title_activity_transact2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CustomerActivity"
+            android:label="@string/title_activity_customer"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Customer2Activity"
+            android:label="@string/title_activity_customer2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Prize2Activity"
+            android:label="@string/title_activity_prizes"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrizeActivity"
+            android:label="@string/title_activity_prize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SyncActivity"
+            android:label="@string/title_activity_sync"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CustomerRegistrationActivity"
+            android:label="@string/title_activity_customer_registration"/>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_sync"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

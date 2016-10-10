@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_clean"
+    tools:context=".Prize2Activity" >
+
+    <LinearLayout
+        android:id="@+id/navtop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_navtop"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_view_previous_desc"
+            android:src="@drawable/selector_back_full" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navtop" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navtop"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_header"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/headerEnclosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/transactIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/image_view_admin_desc"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_redeem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="REDEMPTION"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/headerEnclosed"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:padding="10dp"
+                    android:stretchColumns="0" >
+
+                    <TableRow android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOBILE NUMBER"
+                            android:textColor="@color/text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/redeemMobileNumber"
+                            android:layout_height="wrap_content"
+                            android:minWidth="150dp"
+                            android:text="09091237645"
+                            android:textColor="@color/text"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NAME"
+                            android:textColor="@color/text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/redeemCustomerName"
+                            android:layout_height="wrap_content"
+                            android:minWidth="150dp"
+                            android:text="09091237645"
+                            android:textColor="@color/text"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BIRTH DATE"
+                            android:textColor="@color/text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/redeemCustomerBirthDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09091237645"
+                            android:textColor="@color/text"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS"
+                            android:textColor="@color/text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/redeemCustomerAddress"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:text="1dssfdsdfssssssssssssrrrrerterteteueytetsrsrsrsssssssssssssssssssssseeeeeeeeeeeeeeqqqqqqqqq"
+                            android:textColor="@color/text"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PHOTO"
+                            android:textColor="@color/text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/redeemCustomerPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/basketsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerLayout"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- start basket here -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_rounded"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="GRAND TOTAL SUKI POINTS"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/redeemTotalSukiPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="150"
+                        android:textColor="#1e7800"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- end basket here -->
+
+                <LinearLayout
+                    android:id="@+id/redeemLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/redeemLayoutCatalog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_gray"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_redeem_catalog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="P15 WORTH OF E-LOAD"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/redeem_points_catalog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/textView_redeem_catalog"
+                            android:text="15 POINTS"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/buttonSaveItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/textview3"
+                            android:layout_alignTop="@+id/textView_redeem"
+                            android:contentDescription="@string/image_view_add_basket_desc"
+                            android:src="@drawable/selector_accept" />
+
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/buttonSaveItem"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="5dp"
+                            android:text="REDEEM"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_text5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignBottom="@+id/textview4"
+                            android:layout_alignTop="@+id/textview3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/textview4"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:paddingBottom="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textview4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textview3"
+                            android:layout_alignBottom="@+id/textview3"
+                            android:layout_alignRight="@+id/redeem_points_catalog"
+                            android:text="QUANTITY"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
